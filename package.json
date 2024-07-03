@@ -1,0 +1,29 @@
+{
+  "name": "fastify-demo-title",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsnd --respawn --transpile-only --exit-child src/app.ts",
+    "test": "tap --node-arg=--require=ts-node/register"
+  },
+  "dependencies": {
+    "@fastify/jwt": "^8.0.1",
+    "@prisma/client": "^5.15.1",
+    "fastify": "^4.28.0",
+    "fastify-jwt": "^4.2.0",
+    "fastify-swagger": "^5.2.0",
+    "fastify-zod": "^1.4.0",
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.23.1"
+  },
+  "devDependencies": {
+    "@types/fastify-jwt": "^0.8.1",
+    "@types/node": "^20.14.7",
+    "tap": "^20.0.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.2",
+    "zod-openapi": "^2.19.0"
+  }
+}
